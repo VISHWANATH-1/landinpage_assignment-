@@ -1,0 +1,64 @@
+/* Sidebar.css */
+.sidebar {
+    max-width: 400px;
+    /* Set the maximum width of the sidebar */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.closed {
+    transform: translateX(-100%);
+}
+
+.close-btn {
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    background-color: #ec9e70;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    left: 300px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        max-width: 100%;
+        /* Set the sidebar to full width in mobile view */
+    }
+
+    .close-btn {
+        left: 20px;
+        /* Adjust the position of the close button for mobile view */
+        top: 20px;
+    }
+}
+
+.BTN-BOT {
+    padding: 5px;
+    min-width: 100px;
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid #ec9e70;
+    color: #ec9e70;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.BTN-BOT:hover {
+    background-color: #ec9e70;
+    color: #f0f0f0;
+}
